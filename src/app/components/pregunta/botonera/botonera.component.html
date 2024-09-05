@@ -1,1 +1,11 @@
-<p>botonera works!</p>
+<div class="row">
+  <div class="col-lg-4 offset-lg-4 d-grid gap-2">
+    <button
+      class="btn btn-info btn-lg btn-block"
+      [disabled]="preguntaService.deshabilitarBtn"
+      (click)="siguiente()"
+    >
+      {{ btnString }}
+    </button>
+  </div>
+</div>
